@@ -1,25 +1,25 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import CourseList from './pages/CourseList';
-import Dashboard from './pages/Dashboard';
-import PrivateRoute from './auth/PrivateRoute';
-import Navbar from './components/Navbar';
+import Courses from './pages/Courses';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<CourseList />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route element={<PrivateRoute />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Route>
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/courses" element={<Courses />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
