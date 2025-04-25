@@ -5,7 +5,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Courses from './pages/Courses';
-
+import StudentDashboard from './pages/StudentDashboard';
+import InstructorDashboard from './pages/InstructorDashboard';
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,6 +17,9 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/instructor-dashboard" element={<InstructorDashboard />} />
+          <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </div>
     </BrowserRouter>
