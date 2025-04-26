@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import Courses from './pages/Courses';
 import StudentDashboard from './pages/StudentDashboard';
 import InstructorDashboard from './pages/InstructorDashboard';
+import CourseDetails from './pages/CourseDetails';
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/student-dashboard" element={<StudentDashboard />} />
           <Route path="/instructor-dashboard" element={<InstructorDashboard />} />
           <Route path="*" element={<div>404 Not Found</div>} />
+          <Route path="/courses/:id" element={<CourseDetails />} />
         </Routes>
       </div>
     </BrowserRouter>

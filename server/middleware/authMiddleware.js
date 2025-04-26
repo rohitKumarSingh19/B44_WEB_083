@@ -12,7 +12,7 @@
 //     return res.status(401).json({ message: 'Token invalid or expired' });
 //   }
 // };
-
+import jwt from 'jsonwebtoken'
 export const protect = (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader?.startsWith('Bearer ')) {

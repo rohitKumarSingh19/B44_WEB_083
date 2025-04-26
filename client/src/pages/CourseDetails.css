@@ -1,0 +1,37 @@
+.course-details-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .course-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+  }
+  
+  .course-card h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .description {
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .enroll-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .enroll-button:hover {
+    background-color: #45a049;
+  }
+  

@@ -13,3 +13,8 @@ export const createCourse = async (req, res) => {
   });
   res.status(201).json(course);
 };
+export const getCourseById = async (req, res) => {
+  const course = await Course.findById(req.params.id).populate('instructor', 'name email');
+  if (!course) return res.status(404).json({ message: 'Course not found' });
+  res.json(course);
+};
