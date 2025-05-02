@@ -25,6 +25,7 @@ Other libraries/tools:
 -JWT (for authentication)
 -CORS, Dotenv
 
+
 📂 Project Structure
 LearnHub/
 ├── client/           # Frontend (React)
@@ -43,6 +44,7 @@ LearnHub/
 │   ├── server.js
 │   └── package.json
 └── README.md
+
 
 ⚙️ How to Setup the Project Locally
 1. Clone the repo
